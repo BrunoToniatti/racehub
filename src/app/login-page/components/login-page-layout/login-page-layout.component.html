@@ -1,0 +1,26 @@
+<div class="login-container">
+  <div class="login-card" [@fadeIn]>
+    <h2>Bem-vindo de volta</h2>
+    <form>
+      <div class="input-group">
+        <input type="email" id="email" required />
+        <label for="email">E-mail</label>
+      </div>
+      <div class="input-group">
+        <input type="password" id="senha" required />
+        <label for="senha">Senha</label>
+      </div>
+
+      <div class="actions">
+        <a routerLink="/recuperar-senha">Esqueci minha senha</a>
+      </div>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <div class="signup">
+      <span>Não tem conta?</span>
+      <a (click)="register()">Crie agora</a>
+    </div>
+  </div>
+</div>

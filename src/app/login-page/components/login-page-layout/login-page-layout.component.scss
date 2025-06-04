@@ -1,0 +1,114 @@
+.login-container {
+  height: 100vh;
+  background: url('/assets/background.png') no-repeat center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .login-card {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 3rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    color: #fff;
+    box-shadow: 0 0 20px #ff0000aa;
+    animation: fadeIn 1s ease;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    form {
+      .input-group {
+        position: relative;
+        margin-bottom: 2rem;
+
+        input {
+          background: transparent;
+          border: none;
+          border-bottom: 2px solid #fff;
+          color: white;
+          width: 100%;
+          padding: 10px 5px;
+          font-size: 16px;
+          outline: none;
+
+          &:focus + label,
+          &:valid + label {
+            top: -14px;
+            font-size: 12px;
+            color: #ff3c00;
+          }
+        }
+
+        label {
+          position: absolute;
+          top: 10px;
+          left: 5px;
+          color: #ccc;
+          pointer-events: none;
+          transition: 0.3s ease;
+        }
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #ff3c00;
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+          background-color: #e02e00;
+        }
+      }
+    }
+  }
+}
+.actions {
+  text-align: right;
+  margin-bottom: 1rem;
+
+  a {
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: #ff3c00;
+      text-decoration: underline;
+    }
+  }
+}
+
+.signup {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 14px;
+
+  span {
+    color: #ccc;
+  }
+
+  a {
+    margin-left: 6px;
+    color: #ff3c00;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+

@@ -1,0 +1,24 @@
+<div class="register-container">
+  <div class="form-box">
+    <h2>Criar Conta</h2>
+    <form (ngSubmit)="register()">
+      <div class="input-group">
+        <input type="text" name="nome" required />
+        <label>Nome</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" name="email" required />
+        <label>Email</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" name="senha" required />
+        <label>Senha</label>
+      </div>
+
+      <button type="submit">Cadastrar</button>
+      <button type="button" class="back-btn" (click)="goToLogin()">Voltar para login</button>
+    </form>
+  </div>
+</div>
